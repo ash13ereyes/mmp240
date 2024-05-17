@@ -12,7 +12,15 @@
       margin:0 auto;
     }
 
+    .flex-container{
+        display:flex;
+        flex-direction: row;
+        flex:flex-grow flex-shrink flex-basis;
+
+    }
+    
     .flex-item{
+      flex:1 0 0;
       width:200px;
       border:solid 1px gray;
       padding:5px;
@@ -21,6 +29,7 @@
     }
 
     .lead{
+      flex:2 0 0;
       border:none;
     }
 
@@ -38,7 +47,7 @@
   <body>
     <div id="wrapper">
 
-      <div class="flex-container">
+      <div class="flex-container"> 
 
         <div class="flex-item lead">
           <h1>Awesome Flex layout</h1>

@@ -7,24 +7,37 @@
 
     <style>
       .colorboxes{
+        position: relative;
         margin:100px;
         width:500px;
       }
-      .box{
-        padding:50px;
-        color:white;
-        text-align:center;
+      
+      .box {
+        padding: 50px;
+        color: white;
+        text-align: center;
+        position: relative; 
+        z-index: 1; 
       }
-      .redbox{
-        background-color:red;
+      
+      .bluebox {
+        background-color: blue;
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        z-index: 2; 
       }
-      .bluebox{
-        background-color:blue;
+
+      .redbox {
+        background-color: red;
       }
-      .greenbox{
-        background-color:green;
+
+      .greenbox {
+        background-color: green;
+        position: relative; 
+        z-index: 1; 
       }
-      </style>
+    </style>
 
   </head>
   <body>

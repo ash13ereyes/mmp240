@@ -9,6 +9,7 @@
     <style>
     /* Add CSS code here */
 
+
     ul{              /* resetting ul defaults padding and margins */
       padding:0;
       margin:0;
@@ -21,7 +22,7 @@
     }
     nav{
       background-color: #008387;
-      padding: 1em;
+      padding: none;
     }
     nav li {
       display: inline;
@@ -41,6 +42,22 @@
     nav li a:hover{
       text-decoration: underline;
     }
+
+    @media (max-width:768px) {
+      
+      nav{
+        padding: 0;
+      }
+
+      nav li{
+      display: block;
+      border-right: none;
+      border-bottom: solid 1px #fff;
+      padding: 0.5em;
+      }
+    }
+
+    
 
 
 
